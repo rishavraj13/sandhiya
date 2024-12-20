@@ -35,3 +35,11 @@ UNDER THE curly braces all things are object.
        Arrays  =>  object
        Function  =>  function
        Object  =>  object }
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+memories:
+1.stack - primitive
+-- in stack memory jo bhi hum log variable use karegay tho uska ek hume copy milega.
+
+2. heap - non
+-- reference of a original value.
