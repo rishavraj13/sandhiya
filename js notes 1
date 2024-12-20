@@ -1,0 +1,37 @@
+data type primitive type : 7 types
+1.string
+2.number
+3.boolean
+4.null
+5.undefined
+6.symbol
+7.bigint
+
+
+reference type data type(non primitive): arrays
+objects
+functions
+
+in js we never define language
+- js is dynamically typed language. but type script is statically typed.
+
+UNDER THE curly braces all things are object.
+
+-a function can be stored as a variable in js
+
+-type of operaters are important for interview.
+-non pri. data type ko function bola jata hai.
+-overall summary of todays class-{Return type of variables in JavaScript
+1) Primitive Datatypes
+       Number => number
+       String  => string
+       Boolean  => boolean
+       null  => object
+       undefined  =>  undefined
+       Symbol  =>  symbol
+       BigInt  =>  bigint
+
+2) Non-primitive Datatypes
+       Arrays  =>  object
+       Function  =>  function
+       Object  =>  object }
