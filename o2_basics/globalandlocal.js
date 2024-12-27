@@ -26,4 +26,15 @@ console.log(a);
 
 //********************************************************* *
 
+function one (){
+    const username= 'rishi';
+
+    function two(){
+        const another = 'raj';
+        console.log(username);
+        
+    }
+    two()
+}
+one()
 
