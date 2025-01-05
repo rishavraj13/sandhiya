@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom | part 2</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">tuesday</div>
+        <div class="day">wednesday</div>
+        <div class="day">thursday</div>
+    </div>
+</body>
+<script>
+    const par = document.querySelector('.parent')
+    console.log(par);
+    console.log(par.children);
+    console.log(par.children[1].innerHTml);
+
+    for (let i = 0; i< par.children.length; i++) {
+      console.log(par.children[i].innerHTml) ;
+       
+    }
+    par.children[1].style.color = 'orange'
+    console.log(par.firstElementChild);
+    console.log(par.lastElementChild);
+
+
+    console.log("NODES: ", par.childNodes); //impt.
+
+    
+    
+</script>
+</html>
