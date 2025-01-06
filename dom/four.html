@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit and Remove elements in DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addlang (langname){  //langname is a parameter
+        const li = document.createElement('li'); //This creates a new <li> (list item) element. The li constant now holds this newly created list item which can later be added to an HTML list (<ul> or <ol>).
+        li.innerHTML = `${langname}` /* this line sets the inner HTML content of the li element to the string value stored in the langname variable.
+         Using template literals (${langname}), 
+        it inserts the language name inside the list item
+        */
+        document.querySelector('.language').appendChild(li) //This line attempts to select an HTML element with the class language.
+        
+    }  
+     addlang("python")
+     addlang("typescript")
+
+    function addoptimallang (langname){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector('.language').appendChild(li);
+    }
+    addoptimallang('react')
+
+
+    //now for editing the values
+
+
+    //approach 1
+    const seclang = document.querySelector("li:nth-child(2)");
+    seclang.innerHTML = "mojo"
+
+    //approach 2
+
+    const newli = document.createElement('li')
+    newli.textContent = "mojo"
+    seclang.replaceWith(newli)
+
+    //edit
+
+    const firstlang = document.querySelector("li:first-child")
+    firstlang.outerHTML = '<li>TypeScripts</li>'
+
+    //remove
+
+    const lastlang = document.querySelector('li:last-child')
+    lastlang.remove() //react wii be removed
+
+</script>
+</html>
